@@ -1,6 +1,6 @@
 package ultilities;
 
-import com.saucedemo.pages.BasePage;
+import com.base.BasePage;
 import org.openqa.selenium.WebDriver;
 
 public class Utility {

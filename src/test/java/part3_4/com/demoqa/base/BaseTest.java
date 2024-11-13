@@ -1,14 +1,14 @@
 package part3_4.com.demoqa.base;
 
 import com.demoqa.pages.HomePage;
-import com.saucedemo.pages.BasePage;
+import com.base.BasePage;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import static com.saucedemo.pages.BasePage.delay;
+import static com.base.BasePage.delay;
 import static ultilities.Utility.setUtilityDriver;
 
 public class BaseTest {

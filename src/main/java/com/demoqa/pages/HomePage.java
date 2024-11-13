@@ -1,7 +1,7 @@
 package com.demoqa.pages;
 
 import com.demoqa.pages.forms.FormsPage;
-import com.saucedemo.pages.BasePage;
+import com.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -9,8 +9,8 @@ import static ultilities.JavaScriptUtility.scrollToElementJS;
 
 public class HomePage extends BasePage {
 
-    private By formsCard = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[6]/div/div[3]/h5");
-    private String expectedText = "Book Store Application";
+    private By formsCard = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div/div[3]/h5");
+    private String expectedText = "Forms";
 
     public FormsPage goToForms() {
         scrollToElementJS(formsCard);
