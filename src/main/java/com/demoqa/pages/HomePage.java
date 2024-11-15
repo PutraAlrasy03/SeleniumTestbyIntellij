@@ -1,5 +1,6 @@
 package com.demoqa.pages;
 
+import com.demoqa.pages.elements.ElementsPage;
 import com.demoqa.pages.forms.FormsPage;
 import com.base.BasePage;
 import org.openqa.selenium.By;
@@ -10,6 +11,7 @@ import static ultilities.JavaScriptUtility.scrollToElementJS;
 public class HomePage extends BasePage {
 
     private By formsCard = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div/div[3]/h5");
+    private By elementsCard = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[1]/div/div[3]/h5");
     private String expectedText = "Forms";
 
     public FormsPage goToForms() {
@@ -30,5 +32,11 @@ public class HomePage extends BasePage {
 
         click(formsCard); // Perform the click action
         return new FormsPage();
+    }
+
+    public ElementsPage goToElements(){
+        scrollToElementJS(elementsCard);
+        click(elementsCard);
+        return new ElementsPage();
     }
 }
