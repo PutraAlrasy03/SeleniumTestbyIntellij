@@ -3,6 +3,7 @@ package com.demoqa.pages;
 import com.demoqa.pages.elements.ElementsPage;
 import com.demoqa.pages.forms.FormsPage;
 import com.base.BasePage;
+import com.demoqa.pages.widgets.WidgetsPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -12,6 +13,8 @@ public class HomePage extends BasePage {
 
     private By formsCard = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[2]/div/div[3]/h5");
     private By elementsCard = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[1]/div/div[3]/h5");
+    private By widgetsCard =By.xpath("/html/body/div[2]/div/div/div[2]/div/div[4]/div/div[3]/h5");
+
     private String expectedText = "Forms";
 
     public FormsPage goToForms() {
@@ -38,5 +41,11 @@ public class HomePage extends BasePage {
         scrollToElementJS(elementsCard);
         click(elementsCard);
         return new ElementsPage();
+    }
+
+    public WidgetsPage gotWidgets(){
+        scrollToElementJS(widgetsCard);
+        click(widgetsCard);
+        return new WidgetsPage();
     }
 }
