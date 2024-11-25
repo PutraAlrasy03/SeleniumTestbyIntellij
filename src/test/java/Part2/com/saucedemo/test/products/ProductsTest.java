@@ -2,8 +2,10 @@ package Part2.com.saucedemo.test.products;
 
 import Part2.com.saucedemo.base.BaseTest;
 import com.saucedemo.pages.ProductsPage;
-import static org.junit.Assert.*;
-import org.junit.Test;
+import org.testng.annotations.Test;
+
+import static org.testng.AssertJUnit.assertTrue;
+
 
 public class ProductsTest extends BaseTest {
 

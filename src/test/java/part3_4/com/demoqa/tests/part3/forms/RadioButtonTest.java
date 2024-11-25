@@ -1,7 +1,7 @@
 package part3_4.com.demoqa.tests.part3.forms;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import part3_4.com.demoqa.base.BaseTest;
 
 public class RadioButtonTest extends BaseTest {
@@ -11,7 +11,7 @@ public class RadioButtonTest extends BaseTest {
         var formsPage = homePage.goToForms().clickPraticeForm();
         formsPage.clickFemaleRadioButton();
         boolean isFemaleRadioButtonSelected = formsPage.isFemaleSelected();
-        Assert.assertTrue("\n Female Radio Button Is not selected \n", isFemaleRadioButtonSelected);
+        Assert.assertTrue(isFemaleRadioButtonSelected, "\n Female Radio Button Is not selected \n");
 
     }
 }

@@ -1,7 +1,7 @@
 package part3_4.com.demoqa.tests.part3.forms;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import part3_4.com.demoqa.base.BaseTest;
 
 public class CheckboxTest extends BaseTest {
@@ -15,6 +15,6 @@ public class CheckboxTest extends BaseTest {
         formspage.unclickReadingHobbyCheckbox();
 
         boolean isReadingCheckboxSelected = formspage.isReadingSelected();
-        Assert.assertFalse("\n Reading checkbox is seleted\n", isReadingCheckboxSelected);
+        Assert.assertFalse(isReadingCheckboxSelected, "\n Reading checkbox is seleted\n");
     }
 }
