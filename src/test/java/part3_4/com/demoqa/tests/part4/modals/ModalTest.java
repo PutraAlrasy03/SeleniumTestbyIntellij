@@ -12,8 +12,10 @@ public class ModalTest extends BaseTest {
         var modalDialogsPage = afwPage.clickModalDialogs();
         modalDialogsPage.clickSmallModalButton();
         String actualText = modalDialogsPage.getsmallModalText();
-        System.out.println("Retrieved modal text: " + actualText);
+        //System.out.println("Retrieved modal text: " + actualText);
+        Thread.sleep(3000);
         //Assert.assertTrue(actualText.contains("small modal"),"\n The Message do not contain 'small modal' \n");
         modalDialogsPage.clickCloseButton();
+        Thread.sleep(3000);
     }
 }
