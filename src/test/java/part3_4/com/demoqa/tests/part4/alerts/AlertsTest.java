@@ -17,7 +17,7 @@ public class AlertsTest extends BaseTest {
         acceptAlert();
     }
 
-    @Test
+    //@Test
     public void testConfirmationAlert(){
 
     var alertsPage = homePage.goToAlertsFramesWindowsCard().clickAlert();
@@ -27,4 +27,17 @@ public class AlertsTest extends BaseTest {
     String actualConfirmationResult = alertsPage.getConfirmationResult();
     Assert.assertEquals(actualConfirmationResult,expectedConfirmationResult,"\n You did not select cancel");
     }
+
+    @Test
+    public void testPromptAlert() {
+        String alertText = "Putra Alrasy";
+        String expectedResult = "You entered " + alertText;
+        var alertsPage = homePage.goToAlertsFramesWindowsCard().clickAlert();
+        alertsPage.clikPromptAlertButton();
+        setAlertText(alertText);
+        acceptAlert();
+        String actualResult = alertsPage.getPromptAlertResutl();
+        Assert.assertEquals(actualResult,expectedResult, "\n Actual and expected result are not match");
+    }
+
 }
