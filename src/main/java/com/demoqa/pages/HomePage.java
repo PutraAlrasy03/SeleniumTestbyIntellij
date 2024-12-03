@@ -17,6 +17,7 @@ public class HomePage extends BasePage {
     private By widgetsCard =By.xpath("/html/body/div[2]/div/div/div[2]/div/div[4]/div/div[3]/h5");
     private By alertsFrameWindowsCard = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[3]/div/div[3]/h5");
 
+
     private String expectedText = "Forms";
 
     public FormsPage goToForms() {
