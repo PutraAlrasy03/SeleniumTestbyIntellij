@@ -17,4 +17,9 @@ public class JavaScriptUtility extends Utility {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click();", element);
     }
+
+    public static void scrollPageDown(int pixels) {
+        String jsScript = "window.scrollBy(0, arguments[0]);";
+        ((JavascriptExecutor) driver).executeScript(jsScript, pixels);
+    }
 }
