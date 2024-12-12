@@ -1,11 +1,9 @@
 package com.demoqa.pages.alerts_frames_windows;
 
 import org.openqa.selenium.By;
-import ultilities.JavaScriptUtility;
 
-import static ultilities.JavaScriptUtility.scrollPageDown;
-import static ultilities.JavaScriptUtility.scrollToElementJS;
-import static ultilities.SwitchToUtility.*;
+import static utilities.JavaScriptUtility.scrollPageDown;
+import static utilities.SwitchToUtility.*;
 
 public class FramesPage extends Alerts_Frames_WindowsPage{
 

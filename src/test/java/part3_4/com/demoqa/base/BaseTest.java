@@ -13,11 +13,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.io.File;
 import java.io.IOException;
-import java.util.logging.FileHandler;
 
 import static com.base.BasePage.delay;
-import static java.util.logging.FileHandler.*;
-import static ultilities.Utility.setUtilityDriver;
+import static utilities.Utility.setUtilityDriver;
 
 public class BaseTest {
 

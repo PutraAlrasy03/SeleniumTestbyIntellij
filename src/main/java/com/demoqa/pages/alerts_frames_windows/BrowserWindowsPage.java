@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import java.util.Set;
 
-import static ultilities.SwitchToUtility.switchToWindow;
+import static utilities.SwitchToUtility.switchToWindow;
 
 public class BrowserWindowsPage extends Alerts_Frames_WindowsPage{
 

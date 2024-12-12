@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import part3_4.com.demoqa.base.BaseTest;
 
-import static ultilities.SwitchToUtility.*;
+import static utilities.SwitchToUtility.*;
 
 public class AlertsTest extends BaseTest {
 

@@ -8,7 +8,7 @@ import com.demoqa.pages.widgets.WidgetsPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import static ultilities.JavaScriptUtility.scrollToElementJS;
+import static utilities.JavaScriptUtility.scrollToElementJS;
 
 public class HomePage extends BasePage {
 

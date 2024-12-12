@@ -2,8 +2,8 @@ package com.demoqa.pages.widgets;
 
 import org.openqa.selenium.By;
 import java.util.List;
-import static ultilities.DropDownUtility.*;
-import static ultilities.JavaScriptUtility.scrollToElementJS;
+import static utilities.DropDownUtility.*;
+import static utilities.JavaScriptUtility.scrollToElementJS;
 
 public class SelectMenuPage extends WidgetsPage {
 

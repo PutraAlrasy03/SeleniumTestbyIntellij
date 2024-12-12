@@ -3,7 +3,7 @@ package com.demoqa.pages.widgets;
 import com.demoqa.pages.HomePage;
 import org.openqa.selenium.By;
 
-import static ultilities.JavaScriptUtility.scrollToElementJS;
+import static utilities.JavaScriptUtility.scrollToElementJS;
 
 public class WidgetsPage extends HomePage {
 
